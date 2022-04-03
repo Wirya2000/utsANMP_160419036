@@ -34,8 +34,8 @@
   {"id":"4", "name":"Anginmamiri, Rungkut Mejoyo Utara", "address":"Rungkut Mejoyo Utara Blok AG No. 24, Rungkut, Surabaya", "phone":"012412472741242", "rating":"4.8", "number_rating":200, "category":"Chinese Food", "photoURL":"https://i.gojekapi.com/darkroom/gofood-indonesia/v2/images/uploads/f714d7cf-ef34-4737-aab2-7caa12f6ec09_IMG_20200225_215157_446.jpg?h=240&w=408&fit=crop&auto=compress"}
 ],
 "review":[
-  {"id":"1", "restaurant_id":1, "username":"bryan", "name":"Bryan Immanuel", "phone":"08956313423", "photoURL":"", "email":"bryanimmanuel@gmail.com", "title":"Makanan Enak", "content":"Makanan sangat enak. Bakalan balik lagi", "date":"10/12/2018", "rating":5},
-  {"id":"2", "restaurant_id":2, "username":"bryan", "name":"Bryan Immanuel", "phone":"08956313423", "photoURL":"", "email":"bryanimmanuel@gmail.com", "title":"Makanan Kurang rasa", "content":"Makanannya terlalu hambar", "date":"22/2/2020", "rating":3},
-  {"id":"3", "restaurant_id":1, "username":"kelvin", "name":"Kelvin", "phone":"081223221321", "photoURL":"", "email":"kelvin@gmail.com", "title":"Paling Best", "content":"Makanan sangat enak dan harganya murah", "date":"10/12/2021", "rating":5}
+  {"id":"1", "restaurant_id":1, "username":"bryan", "name":"Bryan Immanuel", "phone":"08956313423", "photoURL":"https://randomuser.me/api/portraits/men/85.jpg", "email":"bryanimmanuel@gmail.com", "title":"Makanan Enak", "content":"Makanan sangat enak. Bakalan balik lagi", "date":"10/12/2018", "rating":5},
+  {"id":"2", "restaurant_id":2, "username":"bryan", "name":"Bryan Immanuel", "phone":"08956313423", "photoURL":"https://randomuser.me/api/portraits/men/100.jpg", "email":"bryanimmanuel@gmail.com", "title":"Makanan Kurang rasa", "content":"Makanannya terlalu hambar", "date":"22/2/2020", "rating":3},
+  {"id":"3", "restaurant_id":1, "username":"kelvin", "name":"Kelvin", "phone":"081223221321", "photoURL":"https://randomuser.me/api/portraits/men/85.jpg", "email":"kelvin@gmail.com", "title":"Paling Best", "content":"Makanan sangat enak dan harganya murah", "date":"10/12/2021", "rating":5}
 ]
 }
