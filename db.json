@@ -25,8 +25,8 @@
 ],
 
 "user":[
-  {"id":"1", "username":"bryan", "name":"Bryan Immanuel", "phone":"08956313423", "photoURL":"", "email":"bryanimmanuel@gmail.com"},
-  {"id":"2", "username":"kelvin", "name":"Kelvin", "phone":"081223221321", "photoURL":"", "email":"kelvin@gmail.com"}
+  {"id":"1", "username":"bryan", "name":"Bryan Immanuel", "phone":"08956313423", "photoURL":"https://randomuser.me/api/portraits/men/85.jpg", "email":"bryanimmanuel@gmail.com"},
+  {"id":"2", "username":"kelvin", "name":"Kelvin", "phone":"081223221321", "photoURL":"https://randomuser.me/api/portraits/men/100.jpg", "email":"kelvin@gmail.com"}
 ],
 
 "favourite":[
