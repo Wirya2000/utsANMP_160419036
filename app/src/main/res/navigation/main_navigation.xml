@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/itemHome">
+
+    <fragment
+        android:id="@+id/itemHome"
+        android:name="com.ubaya.ukuliner_160419036.view.RestaurantListFragment"
+        android:label="UKuliner"
+        tools:layout="@layout/fragment_restaurant_list">
+        <action
+            android:id="@+id/actionRestaurantDetail"
+            app:destination="@id/restaurantDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuListFragment"
+        android:name="com.ubaya.ukuliner_160419036.view.MenuListFragment"
+        android:label="List Menu"
+        tools:layout="@layout/fragment_menu_list">
+        <argument
+            android:name="restaurantID"
+            app:argType="string" />
+        <action
+            android:id="@+id/actionMenuDetail"
+            app:destination="@id/menuDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/menuDetailFragment"
+        android:name="com.ubaya.ukuliner_160419036.view.MenuDetailFragment"
+        android:label="Detail Menu"
+        tools:layout="@layout/fragment_menu_detail">
+        <argument
+            android:name="menuID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/restaurantDetailFragment"
+        android:name="com.ubaya.ukuliner_160419036.view.RestaurantDetailFragment"
+        android:label="Restaurant"
+        tools:layout="@layout/fragment_restaurant_detail">
+        <action
+            android:id="@+id/actionMenuList"
+            app:destination="@id/menuListFragment" />
+        <argument
+            android:name="restaurantID"
+            app:argType="string" />
+        <action
+            android:id="@+id/actionReviewList"
+            app:destination="@id/reviewListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewListFragment"
+        android:name="com.ubaya.ukuliner_160419036.view.ReviewListFragment"
+        android:label="Review"
+        tools:layout="@layout/fragment_review_list">
+        <argument
+            android:name="restaurantID"
+            app:argType="string" />
+        <action
+            android:id="@+id/actionReviewDetail"
+            app:destination="@id/reviewDetailFragment" />
+        <action
+            android:id="@+id/actionCreateReview"
+            app:destination="@id/createReviewFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/reviewDetailFragment"
+        android:name="com.ubaya.ukuliner_160419036.view.ReviewDetailFragment"
+        android:label="Detail Review"
+        tools:layout="@layout/fragment_review_detail">
+        <argument
+            android:name="reviewID"
+            app:argType="string" />
+    </fragment>
+    <fragment
+        android:id="@+id/itemProfile"
+        android:name="com.ubaya.ukuliner_160419036.view.ProfileFragment"
+        android:label="Profile"
+        tools:layout="@layout/fragment_profile" />
+    <fragment
+        android:id="@+id/itemFAQ"
+        android:name="com.ubaya.ukuliner_160419036.view.FAQFragment"
+        android:label="FAQ"
+        tools:layout="@layout/fragment_f_a_q" />
+    <fragment
+        android:id="@+id/itemFavourite"
+        android:name="com.ubaya.ukuliner_160419036.view.FavouriteRestaurantFragment"
+        android:label="Favourite Restaurant"
+        tools:layout="@layout/fragment_favourite_restaurant" >
+        <action
+            android:id="@+id/actionFavouriteToRestaurant"
+            app:destination="@id/restaurantDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/createReviewFragment"
+        android:name="com.ubaya.ukuliner_160419036.view.CreateReviewFragment"
+        android:label="Create Review"
+        tools:layout="@layout/fragment_create_review">
+        <action
+            android:id="@+id/actionBackReviewList"
+            app:destination="@id/reviewListFragment"
+            app:popUpTo="@id/reviewListFragment"
+            app:popUpToInclusive="true" />
+        <argument
+            android:name="restaurant_id"
+            app:argType="string" />
+    </fragment>
+</navigation>
